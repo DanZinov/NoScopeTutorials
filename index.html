@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<title>Daniil Zinovyev</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<style>
+    body {
+        background: url(blue.jpg);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #414141;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    li {
+        float: left;
+    }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+            li a:hover {
+                background-color: #9aab77;
+            }
+
+    mi {
+        float: right;
+    }
+
+        mi a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+            mi a:hover {
+                background-color: #9aab77;
+            }
+
+    .home {
+        height: 800px;
+    }
+
+    .skills {
+        margin-bottom: 50px;
+    }
+
+    .projects {
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .relevant_experience {
+        padding-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .profiles {
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    .profile_container {
+        text-align: center;
+        margin-left: 33%;
+        margin-right: 35%;
+        background-color: #ffedc6;
+        color: #3c3c3c;
+        display: grid;
+        grid-template-columns: 110px 110px 110px 110px;
+        border: 20px solid #9aab77;
+        border-style: double;
+        border-radius: 10px;
+        position: absolute;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        z-index: 1;
+    }
+
+    .relevant_experience_container {
+        background-color: #ffedc6;
+        color: #3c3c3c;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
+        position: absolute;
+        border: 20px solid #9aab77;
+        border-style: double;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    .container {
+        background-color: #ffedc6;
+        color: #3c3c3c;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-right: 15px;
+        padding-left: 15px;
+        border: 20px solid #9aab77;
+        border-style: double;
+        border-radius: 10px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .image {
+        background-color: #ffedc6;
+        color: #3c3c3c;
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: absolute;
+        border: 20px solid #9aab77;
+        border-style: double;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-family: "Lato", sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-family: "Lato", sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 36px;
+    }
+
+    .title {
+        background-color: #ffedc6;
+        color: #3c3c3c;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-family: "Lato", sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        border: 5px solid #9aab77;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 35%;
+        margin-right: 35%;
+        z-index: 1;
+    }
+
+    .grid-container {
+        overflow: hidden;
+        background-color: #ffedc6;
+        color: #3c3c3c;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin: 50px;
+        padding: 15px;
+        border: 20px solid #9aab77;
+        border-style: double;
+        border-radius: 10px;
+    }
+
+        .grid-container > div {
+            overflow: hidden;
+            text-align: center;
+            padding: 5px 0;
+            font-size: 100px;
+        }
+
+    a {
+        font-family: "Montserrat", sans-serif
+    }
+
+    b {
+        color: #255296;
+        font-size: 35px;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        height: 250px;
+        width: 250px;
+    }
+
+        .zoom:hover {
+            transform: scale(1.3);
+        }
+
+    .profile_container_button {
+        border-radius: 10px;
+        background-color: #3c3c3c;
+        border: solid;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 70%;
+        height: 80px;
+    }
+
+    .button {
+        display: inline-block;
+        border-radius: 10px;
+        background-color: #3c3c3c;
+        border: solid;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 32%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+</style>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#snaptogrid">Skills</a></li>
+    </ul>
+    <!--Home-->
+    <section class="home" id="snaptogrid">
+        <div class="container">
+            <h1 class="title">Snap to Grid Building Placement</h1>
+            <h2>This is a tutorial that is going to teach you how to create a Snap to Grid Building Placement For Mobile Devices in Unity.</h2>
+            <a class="button" style="background:url(youtube.jpg)" href="https://www.youtube.com/watch?v=GaZ8paevZdo&t=" target="_blank"><span>Youtube Coding Tutorials</span></a>
+            <a class="button" style="background:url(csharp.jpg)" href="https://raw.githubusercontent.com/DanZinov/NoScopeTutorials/gh-pages/BuildingManager.cs" target="_blank"><span>BuildingManager.cs</span></a>
+            <a class="button" style="background:url(csharp.jpg)" href="https://raw.githubusercontent.com/DanZinov/NoScopeTutorials/gh-pages/BuildingPlacement.cs" target="_blank"><span>BuildingPlacement.cs</span></a>
+            <a class="button" style="background:url(csharp.jpg)" href="https://raw.githubusercontent.com/DanZinov/NoScopeTutorials/gh-pages/PlaceableBuilding.cs" target="_blank"><span>PlaceableBuilding.cs</span></a>
+        </div>
+    </section>
+</body>
+</html>
